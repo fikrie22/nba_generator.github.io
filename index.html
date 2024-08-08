@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px; /* Mengatur lebar maksimum kontainer */
+            width: 90%; /* Mengatur lebar kontainer agar tetap proporsional di layar yang lebih besar */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: left; /* Aligment label ke kiri */
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px; /* Mengatur tinggi textarea */
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            resize: vertical; /* Mengizinkan perubahan ukuran vertikal */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            margin-top: 20px;
+            text-align: left; /* Aligment output ke kiri */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NBA Code Generator</h1>
+        <label for="input">Masukkan input:</label>
+        <textarea id="input" placeholder="Contoh: 10.13.1.11 10.14.2.22"></textarea>
+        <button onclick="generateNBA()">Generate</button>
+        <p id="output"></p>
+    </div>
+</body>
+</html>
