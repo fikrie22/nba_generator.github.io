@@ -1,1 +1,1 @@
-# nba_generator.github.io
+# nbacodegenerator.github.io
