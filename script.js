@@ -1,4 +1,3 @@
-<script>
         function generateNBA() {
             var input = document.getElementById("input").value;
             var lines = input.split(/\r?\n|\r/); // Membagi input berdasarkan baris baru atau baris
@@ -47,4 +46,3 @@
             });
             document.getElementById("output").innerText = output;
         }
-    </script>
